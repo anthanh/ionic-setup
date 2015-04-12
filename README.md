@@ -43,6 +43,7 @@ Instructions to setup an ionic development environment
     curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | sh
     nvm install 0.12.2
     nvm use 0.12.2
+    nvm alias default stable
     ```
 
   * Windows: Download & install [nodejs](https://nodejs.org/download/)
@@ -68,9 +69,15 @@ Instructions to setup an ionic development environment
   * OSX
 
     ```bash
+    cd ~
     curl http://dl.google.com/android/android-sdk_r24.1.2-macosx.zip -o android-sdk.zip
     unzip android-sdk.zip
     rm android-sdk.zip
+
+    echo 'export ANDROID_HOME=$HOME/android-sdk-macosx' >> ~/.bashrc
+    echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools' >> ~/.bashrc
+    . ~/.bashrc
+
     cd android-sdk-macosx/tools
     ./android
     # Select Android 5.0.1 (API 21), then, next, next, next, ...
@@ -79,6 +86,7 @@ Instructions to setup an ionic development environment
   * Ubuntu
 
     ```bash
+    cd ~
     wget http://dl.google.com/android/android-sdk_r24.1.2-linux.tgz
     tar -xvzf android-sdk_r24.1.2-linux.tgz
     rm android-sdk_r24.1.2-linux.tgz
