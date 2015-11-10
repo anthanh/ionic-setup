@@ -70,7 +70,7 @@ Instructions to setup an ionic development environment
 
     ```bash
     cd ~
-    curl http://dl.google.com/android/android-sdk_r24.1.2-macosx.zip -o android-sdk.zip
+    curl http://dl.google.com/android/android-sdk_r24.4.1-macosx.zip -o android-sdk.zip
     unzip android-sdk.zip
     rm android-sdk.zip
 
@@ -87,7 +87,7 @@ Instructions to setup an ionic development environment
 
     ```bash
     cd ~
-    wget http://dl.google.com/android/android-sdk_r24.1.2-linux.tgz
+    wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
     tar -xvzf android-sdk_r24.1.2-linux.tgz
     rm android-sdk_r24.1.2-linux.tgz
     
